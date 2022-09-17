@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@drawable/icon_gcoding" />
+
+    <TextView
+        android:id="@+id/tv_add_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_app"
+        android:drawableLeft="@mipmap/ic_drawer_add"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_precise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/precise_positioning"
+        android:drawableLeft="@mipmap/ic_drawer_add"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_about_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:drawableLeft="@mipmap/ic_drawer_me"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

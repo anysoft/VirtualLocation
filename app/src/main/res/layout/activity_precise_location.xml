@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="space.jonhy.app.gossip.activity.PreciseLocationActivity">
+
+
+    <space.jonhy.app.gossip.view.TopBanner
+        android:id="@+id/topbanner"
+        style="@style/TopBannerBaseStyle"
+        android:layout_alignParentTop="true"
+        custom:leftButtonBackground="@mipmap/ic_reback"
+        custom:leftButtonHeight="20dp"
+        custom:leftButtonVisiable="true"
+        custom:leftButtonWidth="25dp"
+        custom:titleText="@string/precise_positioning"
+        custom:titleTextColors="#c1030303"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <EditText
+                android:id="@+id/et_latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/please_enter_longitude"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <EditText
+                android:id="@+id/et_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/please_enter_latitude"
+                android:inputType="numberDecimal"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_precise_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="15dp"
+            android:background="#36cace"
+            android:textColor="#fff"
+            android:text="@string/precise_positioning"/>
+        <ProgressBar
+            android:id="@+id/pb_locating"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="15dp"
+            android:background="@drawable/bg_with_round"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_shuttle_notice"
+        android:layout_margin="20dp"
+        android:layout_below="@id/topbanner"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

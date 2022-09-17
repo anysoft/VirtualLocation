@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Gossip</string>
+    <string name="app_introduce">   Gossip是一款虚拟定位软件，适用于微信、微博、考勤签到等社交办公软件，让你随心所欲的改变手机地理位置！</string>
+    <string name="app_version_copyright">当前版本：1.8.8(build 12035) \n@2022 jonhy.space All right reserved</string>
+    <string name="item_application_name">应用程序名</string>
+    <string name="app_list_not_ready">数据未加载完成,无法过滤！</string>
+    <string name="add_app_to_hook">添加Hook程序</string>
+    <string name="search">搜索</string>
+    <string name="search_default">搜索...</string>
+    <string name="select_address">选定位置</string>
+    <string name="virtual_location_stoped">虚拟定位已暂停！</string>
+    <string name="exit_notification">退出后，将不再提供定位服务，继续退出吗？</string>
+    <string name="notification">提示</string>
+    <string name="confirm">确认</string>
+    <string name="minimize">最小化</string>
+    <string name="cancel">取消</string>
+    <string name="finish_shuttle">穿梭完成</string>
+    <string name="start_shuttle">立即穿梭</string>
+    <string name="precise_positioning">精确定位</string>
+    <string name="add_app">添加程序</string>
+    <string name="about">关于</string>
+    <string name="opensource_license">开源许可证</string>
+    <string name="reset">重置</string>
+    <string name="stop">停止</string>
+    <string name="please_enter_longitude">请输入精确经度值</string>
+    <string name="please_enter_latitude">请输入精确纬度值</string>
+    <string name="finish_shuttle_notice">※ 已穿越到指定地点，快打开需要虚拟定位的APP试试！</string>
+    <string name="loading">loading...</string>
+    <string name="my_location">我的位置</string>
+</resources>
